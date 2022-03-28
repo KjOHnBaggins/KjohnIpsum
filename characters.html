@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="nav-list flex space-adjust f5 clr-lightgray">
+        <ul class="nav-logo-list flex">
+            <li class="nav-logo-item" id="home"><a href="index.html">KJOHN IPSUM</a></li>
+            <li class="nav-logo-item display">
+                <ul class="nav-logo-item__links">
+                    <li><a href="generator.html">LoremIpsum Generator</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="imagegallery.html">Image Gallery</a></li>
+                </ul>
+            </li>
+            <li class="nav-logo-item display">Language <span class="clr-gray">(Coming Soon!)</span>
+            </li>
+        </ul>
+
+        <ul class="nav-social-list">
+            <li class="nav-social-item">
+                <svg width="16px" height="16px">
+                <path class="icon-social__fill" d="M16,3.53933333 C15.4113333,3.80066667 14.7786667,3.97666667 14.1146667,4.056 C14.792,3.65 15.3133333,3.00666667 15.558,2.24 C14.924,2.616 14.2213333,2.88933333 13.474,3.03666667 C12.8753333,2.39866667 12.0213333,2 11.0773333,2 C9.26466667,2 7.79466667,3.47 7.79466667,5.28266667 C7.79466667,5.53933333 7.824,5.79 7.88,6.03066667 C5.152,5.89333333 2.73333333,4.58666667 1.114,2.60066667 C0.831333333,3.08533333 0.669333333,3.64933333 0.669333333,4.25066667 C0.669333333,5.39 1.24933333,6.39466667 2.13,6.98333333 C1.592,6.96666667 1.08533333,6.81866667 0.643333333,6.57266667 C0.642666667,6.58666667 0.642666667,6.6 0.642666667,6.614 C0.642666667,8.20466667 1.77466667,9.53133333 3.276,9.83266667 C3.00066667,9.90733333 2.71066667,9.948 2.41133333,9.948 C2.19933333,9.948 1.994,9.92733333 1.79333333,9.88933333 C2.21133333,11.1926667 3.42333333,12.142 4.86,12.1686667 C3.73666667,13.0493333 2.32133333,13.574 0.783333333,13.574 C0.518,13.574 0.256666667,13.5586667 0,13.528 C1.45266667,14.4593333 3.17866667,15.0026667 5.032,15.0026667 C11.0693333,15.0026667 14.372,10.0013333 14.372,5.66333333 C14.372,5.52066667 14.3686667,5.37933333 14.362,5.23866667 C15.0033333,4.77533333 15.56,4.19733333 16,3.53933333"></path><path class="icon-social__fill" d="M16,3.53933333 C15.4113333,3.80066667 14.7786667,3.97666667 14.1146667,4.056 C14.792,3.65 15.3133333,3.00666667 15.558,2.24 C14.924,2.616 14.2213333,2.88933333 13.474,3.03666667 C12.8753333,2.39866667 12.0213333,2 11.0773333,2 C9.26466667,2 7.79466667,3.47 7.79466667,5.28266667 C7.79466667,5.53933333 7.824,5.79 7.88,6.03066667 C5.152,5.89333333 2.73333333,4.58666667 1.114,2.60066667 C0.831333333,3.08533333 0.669333333,3.64933333 0.669333333,4.25066667 C0.669333333,5.39 1.24933333,6.39466667 2.13,6.98333333 C1.592,6.96666667 1.08533333,6.81866667 0.643333333,6.57266667 C0.642666667,6.58666667 0.642666667,6.6 0.642666667,6.614 C0.642666667,8.20466667 1.77466667,9.53133333 3.276,9.83266667 C3.00066667,9.90733333 2.71066667,9.948 2.41133333,9.948 C2.19933333,9.948 1.994,9.92733333 1.79333333,9.88933333 C2.21133333,11.1926667 3.42333333,12.142 4.86,12.1686667 C3.73666667,13.0493333 2.32133333,13.574 0.783333333,13.574 C0.518,13.574 0.256666667,13.5586667 0,13.528 C1.45266667,14.4593333 3.17866667,15.0026667 5.032,15.0026667 C11.0693333,15.0026667 14.372,10.0013333 14.372,5.66333333 C14.372,5.52066667 14.3686667,5.37933333 14.362,5.23866667 C15.0033333,4.77533333 15.56,4.19733333 16,3.53933333"></path>
+                </svg>
+            </li>
+            <li class="nav-social-item">
+                <svg width="16px" height="16px">
+                    <path class="icon-social__fill" d="M6.48196682,15.9986141 L6.48196682,8.70106445 L4,8.70106445 L4,5.85694718 L6.48269403,5.85694718 L6.48269403,3.75967432 C6.48269403,1.32424892 7.98656375,0 10.1827371,0 C11.2299192,0 12.1374769,0.0778114414 12.3999996,0.112717509 L12.3999996,2.65649715 L10.8772224,2.65722436 C9.68387127,2.65722436 9.45189136,3.21863028 9.45189136,4.04110448 L9.45189136,5.85694718 L12.2981903,5.85694718 L11.9294949,8.70106445 L9.45189136,8.70106445 L9.45189136,15.9986141 L6.48196682,15.9986141 L6.48196682,15.9986141 Z"></path>
+                </svg>
+            </li>
+            <li class="nav-social-item">
+                <svg width="16px" height="16px">
+                    <path class="icon-social__fill" d="M7,7 L7,9.4 L10.97,9.4 C10.81,10.43 9.77,12.42 7,12.42 C4.61,12.42 2.66,10.44 2.66,8 C2.66,5.56 4.61,3.58 7,3.58 C8.36,3.58 9.27,4.16 9.79,4.66 L11.69,2.83 C10.47,1.69 8.89,1 7,1 C3.13,1 0,4.13 0,8 C0,11.87 3.13,15 7,15 C11.04,15 13.72,12.16 13.72,8.16 C13.72,7.7 13.67,7.35 13.61,7 L7,7 L7,7 Z M22,7 L20,7 L20,5 L18,5 L18,7 L16,7 L16,9 L18,9 L18,11 L20,11 L20,9 L22,9 L22,7 L22,7 Z"></path>
+                </svg>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="main-section flex" id="frodo">
+            <div class="flex">
+                <div class="main-section__header space-adjust f1">
+                    <h2 class="margin-bottom clr-gray">Popular Characters</h2>
+                    <p class="clr-white max-width">Lord of the rings have tons of unique characters. But few only took place even in the hearts of those who are not familiar with the films.</p>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFhUYFRgaGBgYGBUYGBgYGhgYGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJSc0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMABBgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EADkQAAEDAwMCBAMGBQMFAAAAAAEAAhEDBCESMUEFUSJhcYETkaEUMrHB0fAGQlLh8RVyoiNic4Ky/8QAGgEAAwEBAQEAAAAAAAAAAAAAAgMEAQAFBv/EACURAAMBAAICAgMBAAMBAAAAAAABAhEDIRIxIkEEE1FhMkKBFP/aAAwDAQACEQMRAD8AzlxTKst7IkSmt1ZZRFvTaAvm75XKxBKujO3FEtVdKomnUmBxhUCxAHmmxac9nJ6COf3VRqMw6ZImB2zx54RDrUk7SktwXai1pnaTEQQMj8VRxJV6DmcYyF01jXOI1vcC1oOQ0REu7lI3u7/JQfVcTBcXRjyx2UXDbhWxGB09IueSdoCgTlWvwoNbOU9AezrM4XXgq+2pyUc+y8B7pdWpY2ePyQq1KVJ84AlRZvBUWgtP5o32sBSx6MrO0a77w5H1U69HS7SDjBGwwVTa1XAyCPl27oy6kw5w447SDtupqbTKUp8QesD4QOTH1V7unOdqA3aBKqLxLXDgj0TyjUcHElpGpoOBq2xMdshDVOV0dMpmZrMj1G6reyfT97Jv1S1IMx94bkR8hKVFsb8JkX5ITc4yqnUM/SOyONTw6Tjmf36oFzNUuAxICskwT6JjwX2EMHZ0+mAEXbOgkcBAsaT+iIZWiZmTzwEnknViNXfsPZX0GQjD1nEIKkyWz+/VA1QATn8VL+uafYipTeBVS5kyVNlUFLdE8oinbubmUb8UsA8UhtaPc3bZTe5xdJCHtNRjhM32xIwp3qfYL9h9CqNCT3dJxJM4XHVXswvfajGQun+o4BNCCvLtatleTA9Zrbi4EZQ7HyENeGUA6u4CAVE5VejE9O3tWHYXqVySPf6IaiySS5EPgbb/ALym4l0hsNIYUnA4AkxngD1P5LKXR0BwIkv1aXdvEATnyBHutJbvDR5LJdXJ15+XbOyf+Itph73ouOMSraZndVvZkqbPovVfSOS0se2R5qtlMzCtY6Qfp6Im2pSUuqcjJhUyFCiQQU9tiC0jnkIQU8QrrY5HBGD5hTVWlUyl0LLyxcHksE+Sraz+th9R+i077fUJhVi2O0LlzP0zf1SZ77MP5SR7K6nTcInUQP5fEAnrbTyRrKGNkL5WzlxyjL1KZ2a0uaR93lp8jyERa9Ve0NYRJafA4yCBy13cQnNW2BEEJe+0zMSR3AIPkQVn7FnyO8f4UXt8HgeGD27fqgqzAfNX9Uo41NaB6THyOyla0w5oI7fVMVJTqF1Lr2Kq0AgBTJkAY/yr7ulBmEtFQ6jKfPyXRNXTC3PgTyuMu5wQh3PnHCociUauwXTNH0x4c0gequd0p7vEIQP8PUCXFwPEEd1tLUgMzuvO5q8LakXbxmTpWsbjPZH21mX+ivvaMkkYV1lUgQgdOloHkmiirauZlvGyIsr8gQ4QUxp0iRJQ1xRb2SL5d+LQDBKl4x7leCwhKrqyzIMKunbuGdRRqZzpnIlfMbqwuoOs0zkyvJ6wPB1VeZVbCDKtvgGhLaby44SZnZ0GPkGVHCcId5MifP8AAomlb8leu6LYz7LpaTwdOLoC+3taPEC4HI0kY9UguqmtxdETwO36om8pOa8tA3iATO6CeC0r0eGJXaGMhVcphkNB8p+aoejQyWgeSfXxSNlaU286gm9s2EBaUufNNaYSOatH8awuYJRltbSZj3UrekOUdSaFM0UfRfRoAKz4AXmuVjXrMMbZ5tAKbaS78RdFRakhb8iqpbIOraJl8RQc8LnKCmmhU+y1AghJKls6i46RLTmP0WqfUAS2+exw3EjIXTqRreiC/h7NQO30SKuOVpLyi0kFhyR4mhIK9LJHZVcNJE3JP2UMClUZkeik1kBX/ZyRq3DYBj0wnuu9E59DT+HXFpdzwn7Xu2Wc6Xgz6H6+L6LUuOlgJXj/AJWK+vszl9Ipq0Mea5Tox4ifZC1+pYjlUsvnnAHugiazsmeoesvgBGEK+o558Akd0oNBzjJMLX9BosawI6lHePkZm4o1OQg31HjELbdQY07BZitR1PiFk0txo5JJ4KhqOd15aFvTwFxF+yTfIj1K3LjPCFpUg04Ta7qiMJMa3iSuLyU4wU8bSCX1owo6CfEeM5VNZ8hUuuff9x+SNLfQ/jX2CXjx8TW7Ol0uERudvPAn3Se5fqeXREkwO0q66fLnEnd2AhwzuvS4lmDmtRQBkI4Hwg+R+iEO/uESPux6ptdmz0XW88GPZFtqafMoa1+6FacFT10x8vovF08nldN49vdUiqdtvMqz4jRk63+kNHt3XLW+kc6S9sIpdYej7fqRdvhK2UmumGvYYmCNWO8bwvGm4Z+RGxCG5z6Civ8ATS0K0q2o8gJb0h5OCmtzThqQMeaLa95AKVV+oPnBKKuKRKH+y+EvIkDGZgngNAy5NhN+gOSpS0hSfUdufqrHUCf5l5lB8hhpsaXDU0ODm6h/2uDioM3gamuH3mOMx6HlFc1PsCLmukwq3ZALTB7LN3zf+oQtbbUJ3We6zTisPNZw18juWRSTCvo1InxETv2PqF6pRk+0hDnB39lW8awm9Md9Prhj2O8J8eqQZxEEEcJ9XuhUMN2WVpOBGR8k8sjEOHO/b19VB+Rxpvfs61qX+DKj0gHO5UqnTSzjCKtLqEy1h4UNK/6IrGuhPQthv+KOpPDeYVFy4tnCTVLwkxMLoVC1WMeXF23gpaPvSqqMbkoitXaBwnKTN+ydS4gDheS1zy7bK8s8UbjDrug4DYpPUcQciF9Jq0WHhKOp9Na5piEmebxfyXQyuPHqMgHSEOd0XeWrqZgjB2KFc2YxHH91VLT7XoKEBXlsNbezigLky8gbSQPbCd9ZpuDGuEEB0gxBgCN+0ygensZBfUl2jDWDAzmST5lWcdfHWUzO9C2pIOURbulUXNTU5x7klRt6kFUeLc6wU0qwa2TMR5pj9mkJfYvkp5bCQpLb0qlahS+18UFFvoHS2BMcD8QmNSyDlGlYOnf5rZ5nJlcU0sZHpVB4ewuLy2mCBrMmDPhHYZV77QAucCNLv5BkT3B4KJo2QH3jP4K25gBZfI6BnjU9IG6bRhyb3LJCVWT/ABhO6xwlpdB11gsqW4c0gzG+OfL0QdwzUwNaRLSDG23EcJq0qutYNfnY+WEUU5eoGpVLH6EFnZFj2kyA0kgF2ozwB2CY0rYOeSQJ7hE/6aP6nfNFUqTWYC2+Wq9mREz/AMSgUQNlkv4hH/Ub6LaViIWL688Gp7LOJdm2+hZUmJG4z+qFqQ7Mb7+RR0ZVBoZLf2CqlX9J6k7byNnfNOOnvJxt+HskweRghNrA6tLm7jwn0SeZatBpbIwJczzRNLqhAiENcMJ4QbpCjSTJPQ4qXmoJS941SpMqGIXiwLklLMxJ6QddThdaAdyqn0Qq2MMpq8cNWDOi/T6LyFNNwXEppf07zNw+rndWtqd0ISCuEkcqK8b+Q/QHrA1Y3Sj4Hsnld45hJr+rB2jkeY4KfxPOkjp6egvVXyw+RA8ogiFloJnO3HktBeuBpPiZJHy5SZtgSXiR4d/P0Xp8DSnsdlMFC4BGVNrNzGO6iJPoq0zGmH9Pf4lo7Z+Fl7F3iT+hUUnMuynipr2OqNRFUyldCojGVFOVOdDpQd4+FYKiAurhuoTtuuFNYX2Y8UwnhyFm6PUW6g36pwOoNhGC02ibirWOCEPUGHBIB7TldFRC+jlL+wsqh7lX8RQc9Y2glJG5fhYnqr5qErYXD5CyV8zxlM42L5EVUjImPdBuuPEeciPZEZALQYBxPmqLah44OMqheONsQ93Aw0tQnthF9Ilr3NO2/vCJp2sMGNz+OAotow8+Qn3P9gpXapNC+VrxYz+K2EMacmUM8lTpVyplPj2iB9dlvwCqahhM7Roduqb+2AQTfyxi/PvsWl8qbmDcKNSlAwqmvdsU/N9Bv/AhtyvIcBeWeKM8Ua15IOVRWv4Cs6xULZjjBWd+OXHKliPPtla1osur8k4QrNTzAE8nyHdOqHT2luo7rrbZjadSDEaew1E6voNo90+eSfSQziSp4hYKbzTqQzUIhztg2fXcpbRbhxcYkNMbkxiMei0VS3Pwm6WudLgSTttzPCAtumE5HiGokgbYE/LKdN4npdE6Qr2Dfs8DBe9pxnSHHAJ7pa+lNoyo0ZY9zHjydkE++PdaLqbQ22MmNnERGzmx6rL0bmGVGgwxzgA2eTOfbPzT+Gm53/QOTE2BW9Xxj1CfnCzLG59OfRaZj5aD3AKdzzmNC+Km/YRQqo+m9K2I6gpGWxX9D2HCX39rqGN0WHwF5lQHlckzKZm/sRBkCD3CPtqbyYMpqWsnLgFc2k0Z1NjvIWttrsyU0DWvS2ggwBHYb+pTUiFQ26pj+cKTrlh2cCsa/p1N/Z54VblNpXXhL+zPLAdwKzPVw74vhE4kwtUQkd1TIras7hsY2LST+SbD8exVpv0IX1RseURQpyJmR3bkj1VvVLVjnQ0hvhBPbYT7yUDQp1GZHuNpH5p6yp0Rr0f9MvQ8aXYc3juByi3NGonuB9JSFhYYdJBmHEbgrQ2IMeI6oOD3HmpOWMeom5081AtVsr1vSGoBMH0m7oZ7ADIKU9wgeob29oAJCX3zPFBKMt7wad0ru6xLpCnhN0zHjfRx7FW+iIU2v7rrjhNTaB8mAaYXlPQVxN0LsfdTqai9oH8zh9Skz7JwEwtK208cnOco65tGaPZRf/Qofx9MvnUjHU+oOaIiVyjWlr3OyC4YBg4BO3bZWdQoQ4wqaVMdp8u6rnxzyS9jOOpl6N3dQEaT9xzWw2NztOPMbKf21rQ5sAOEYEEAyQZHfZLOoVwdJneGiIB8MZ9JBQ9R4xVj7rwHNDjMGBI9x/yCYlpbNp+gX+IepOeNGQMfIGY+efks3q/ynv8AETGl5cydI8LsyZPiDvMGUmp05IBxPK9LgSmCbk2qK2CcJ5YVPAAeMKih0lzttgCXOPEGDgbbcot9roYHgyC7T76QTj3CDl5Jp4hvHx1M+TLw5GUKiXMep0nkKdyNmsGdRpcMJTUt6owHJvb1sKNdurI3QzTljVntihlhX3DgpttLjkowVntOytHUT/S75I3bZRLgD/0l7sveW+QR1n0pgOS53/sVKk97+ITGk2Agqm0Dbn6OMbpELrnyu1FTKDBDLXOws02/mo9xaHaj4QeOIHsE/qA6QcQZjOccrL1qbXjUCAeW/m1MiV6Ypvvos6qwOAe0+RnBg8H0XKV2HgNdk7Z+SHLA4NDQZGXEunV2xiEbYvc0OBaGyREDIzt5d0dYpwRTwFuaZaWuG8hpB77ZTencaQByMIerRDgO8hxPkM/PZdFNLqlSSZPy2mkgk1yeVXUY+JlcpUScr1ZzglevRNiBtb5iVNtUjdQcXDYKp1XuEWb9A5/Ak3KkbvEIYOCqqRwtUJ/QLlP6DmXAXUr915b+lBfrR9WuNKBrVcHKh1KtnBSf7QScleJHE67GcnI08J1rbUVT/p7uERSro7440p/lc9IBPfsy93RIInj9SfzXLy3Hw2aRnSS47fzeGe/qirt2p3krKOmQHZ5LTsQBKtiniKuDka6E1zbaWat8Brm58TTmfbZInsh2kZE4PcHZbCtRaSIdM8baRJJmdhlZvqttoeDiDkaSfp+Ku/HvXjKaW9hHS7nQHsMgPaROxxsOxEhcu6znAF0SdLYGIDcQR8lK0okuYQHOBZqeCZiDL3DsOY9Uw65RAuGUQASHNdHkWtcQe4wVja/Zi+yj/p2LGPjBRDHoZ8EkjaTHpK6x0LvYA1tncI5lNJKNYgprb3QQVIc0msGDbOVY3p4UKV2O6t+2hBgfomLSFIU4XvtIKqqXQHK5yY2QuHwl7nlxgL1WqXnGyJt6EBdoCTZ5rNDSewJWbr1qNRrnFjmPiQGRoJ8wds+q1dVmCO4KwUlpI7SE7hWiuR4MLJj2NDnsOl4gHtB3R9Nmpod+8JI66dpgE+iM6d1Ey1hGNvOV3LxtrUJqtkaNZwMd/wB+6vpUwh3PIMHHkraVVQvyPOuqdaWOOlewQha7yVxj1qnTEEupoJ9ASiW1sKpzso1qCTwEr28IYUiUbUndTtmJ008Cn0LzQcvJlVELq7yZ2sb3lyS94P8AW4f8ig3OhG3VuRUeCIIe8EeYcQVRVppPhMtnV7IUq6KFWVC0s5OQmH2cBLqJ3oxpC2pbndC1bVx2JaRs4cf2TavVaEGb1qOJaNisfQrdUrkED4ZJxqBIPJjOEF9hLjrquJDY8LR5xEo3qTRGphg7uadsct7GEhdVe8xMDzKs4032uj0I5ZaGFS/a1504hpaA3kkaY9MlQ6pVquca9XwPf91okENiJjgL1tUZRcHaRUdES/IBPIHcKvqVd1Rxe9xeY3P0AHACOJW9L/0K769kbTLAry1DWB8PujgEN9MKO0VLrHlTc1cDEvQ0i6ndFXm6QzKSuZRWMMtbdO2VzGOduV6jRR9BiF0cdt6EIxrV5jVYAgZrfRW5qxvVbAte5wGCSfRbUhU1bUPGQii/FiqnT5yHAGEdZUBqDjxlNOsfw/gvZjuOEht6jmO0u7wvQmptaiO5pGvuaWtmv+Zoknu3mfMJe1qY9JrAiDBxsdiFZcdPiXM2/p5Hp3UnNx53JLudMXiiSoimZR1OoIyqKlQTKmSZjKXBVTlcqVFQ96NScl2GucFJjUFRJJTZlMQtbSOfxBKjV5SruyurjtNT1Ro+PV/8j/8A7K5ToNKnedNe573F2S9xJ9XErjLR4Xn3z9vGL/Y0WaABhUvoufsiadIgZVjarWpT/It9SjHyaZu/oOak791o+qdSpAwWuf8A7Y/Equ0r27xrYwBzcw/JEZmNivV/H4eap2lgU79mfNN22kn2KGqWbWHxiOdP9k/v+uuYPC4auMD9hZo1H1Xy8kk7nyVq4fH7K+L+/R66pjSHDAJw30GTKpDPD7Iy/E44AhV0mYHomqc9GOtZRYNhqPYh6VOJCIonKn5O2W8b1EixcDEWGLzKan0ckQpU0WympUqaKZTWNm6VsYiqTVwMVzGoTibQphRaFYAsOOwpMYutar2NW4LdFLqQIIIWP6900B0gcrcFqQ9dZgpkbPoVXYr6Q2ITilVh0JfYM2Rk5KtntHmcr+RC+sdQL2RPLe/mP0SRxcFpqLv8Ku7tqbpc5pn+ofiQp+Tge7IKroy75Kpem9TpjhlvjHcb/JB1beMpKTl9jJaOWbUx1YQNsEWgvtmW9OFi8pQvIdYB9MqtGo45P4pd1K8ZSbLzvsNyfRHXdyxmt7jAaSSfdfO7+9dVeXuP+1vZs4Ck/F/D/fb30gaXeDm56wTsNP75S2pfOduUvNSV3XC9/i/G4uP0kcpLHvlAPBYdbcRv5jlEF6Cva2IHv6J76G8ctvAGtULjJTGwpaW6jufwS5jZ8/JOjgR2GAloq5WlPigas2VXTCIIVDluE6fRbo5UHtggoqkMKVahIkKflnGWcNasLrYyEQaKDs8YTZjZUlItTKWMRLGr2lXMagMaPNaptC4Aphq4w5CmwKTWK5lNZ2ZpxjVexq41qmAiwWzzgs/1vIKf1Nkg6g6XJsSLp+K0GtRAGdlNpzM+ypDt47ZhVh8+StiejzLflWjGi8K9j+OUttiZz/hEA5/NFgASwD0PcYUa9qHiHZ84hw9+VRcOhwzuOPkusruGxQ1Cfs5MEf0h7fuuDvI4P6FVMpOGCIPYp1TuO6sexrxlTcn4za2Qm9EFRkLyYXdsRHI4IXlC4pfQOH//2Q==" 
+                        alt="Frodo Baggins">
+                    </div>
+                    <figcaption class="">Frodo</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Frodo_Baggins?">Frodo Baggins The Ring Bearer</a></h3>
+                    <p class="margin-bottom f4 clr-white">Frodo Baggins, son of Drogo Baggins, was a hobbit of the Shire 
+                        in the late Third Age. He is commonly considered Tolkien's most renowned character for his leading 
+                        role in the Quest of the Ring, in which he bore the One Ring to Mount Doom, where it was destroyed.
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"I will take the Ring, though I do not know the way."
+                    </blockquote>
+                    <p class="margin-bottom f4 clr-white"> He was a Ring-bearer, best friend to his gardener, Samwise Gamgee, and one of three hobbits who sailed 
+                        from Middle-earth to the Uttermost West at the end of the Third Age</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="sam">     
+            <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUZhrFzgQhyUuUmWXRWAA7ElNTTg1OTDPNw&usqp=CAU"
+                        alt="Samwise Gamgee">
+                    </div>
+                    <figcaption class="">Sam</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Samwise_Gamgee?so=search">Samwise Gamgee</a></h3>
+                    <p class="margin-bottom f4 clr-white">Samwise Gamgee, known as Sam, was a hobbit of the Shire. 
+                        He was Frodo Baggins' gardener and best friend. 
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"I know we are going to take a very long road, 
+                        into darkness; but I know I can't turn back. It isn't to see Elves now, nor dragons, nor mountains,
+                        that I want – I don't rightly know what I want: but I have something to do before the end, and 
+                        it lies ahead, not in the Shire."
+                    </blockquote>
+                    <p class="f4 clr-white">Sam proved himself to be Frodo's closest and most dependable companion, 
+                        the most loyal of the Fellowship of the Ring, and played a critical role in protecting 
+                        Frodo and destroying the One Ring.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="merry">     
+            <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="data:image/jpeg;base64,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" 
+                         alt="Mary Brandybuck">
+                    </div>
+                    <figcaption class="">Merry</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Meriadoc_Brandybuck">Meriadoc "Merry" Brandybuck</a></h3>
+                    <p class="margin-bottom f4 clr-white">Meriadoc "Merry" Brandybuck was a Hobbit of the Shire and one of Frodo Baggins cousins and closest friends. 
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"But, but, lord, I offered you my sword. 
+                        I do not want to be parted from you like this, Théoden King. And as all my friends 
+                        have gone to the battle, I should be ashamed to stay behind."
+                    </blockquote>
+                    <p class="f4 clr-white"> He loved boats and ponies and had a great interest in the maps of 
+                        Middle-earth. He was also one of the nine companions of the Fellowship of the Ring, and 
+                        later became the eighth Master of Buckland.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="pippin">     
+            <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMs1MBxnG1LcFP-bPggL5h_XKE3v0vXLZTNA&usqp=CAU"
+                         alt="Pippin Took">
+                    </div>
+                    <figcaption class="">Pippin</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Peregrin_Took?so=search">Peregrin "Pippin" Took</a></h3>
+                    <p class="margin-bottom f4 clr-white">Peregrin Took, more commonly known as Pippin, was a hobbit of the Shire, 
+                        and one of Frodo Baggins' youngest and closest friends. 
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"No, my heart will not yet despair. Gandalf fell and 
+                        has returned and is with us. We may stand, if only on one leg, or at least be left still upon our knees."
+                    </blockquote>
+                    <p class="f4 clr-white">He was a member of the Fellowship of the Ring and, after the War of the Ring, became 
+                        thirty-second Thain of the Shire.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="gollum">
+            <div class="flex">
+               <figure class="main-section__image space-adjust width-adjust f5">
+                   <div class="image-container">
+                       <img src="https://thenerdstash.com/wp-content/uploads/2020/02/gollum-3.jpg" 
+                       alt="Gollum">
+                   </div>
+                   <figcaption class="">Gollum</figcaption>
+               </figure>
+               <div class="main-section__block space-adjust width-adjust">
+                   <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Gollum?so=search">Gollum (Sméagol)</a></h3>
+                   <p class="margin-bottom f4 clr-white">
+                       Gollum, originally named Sméagol (or Trahald), was at first a Stoor, one of the three early Hobbit-types. The name Gollum was derived from the sound of his gurgling, choking cough.
+                    </p>
+                   <blockquote class="margin-bottom f5 clr-gray">"My precious!"
+                   </blockquote>
+                   <p class="f4 clr-white">His life extended far beyond his nature, by the effects of possessing the One Ring. Sméagol was about 589 years old when he died, a remarkable age for a creature that was once a Hobbit, but he had been deformed and twisted in body and mind by the corruption of the Ring. His chief desire was to repossess the Ring that had enslaved him, and he pursued it for many years after Bilbo Baggins found it in Gollum's cave within the Misty Mountains. Inadvertently, Gollum would play a vital role in the ultimate Quest of the Ring.</p>
+               </div>
+           </div>
+       </section>
+        
+        <section class="main-section flex section-divider" id="gandalf">     
+            <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE6so1T29bFclnu9GEcbyetTmtHoohnHt6zQ&usqp=CAU"
+                        alt="Gandalf The Gray">
+                    </div>
+                    <figcaption class="">Gandalf</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Gandalf?so=search">Gandalf The Grey</a></h3>
+                    <p class="margin-bottom f4 clr-white">Gandalf the Grey, later known as Gandalf the White, and originally named Olórin (Quenya; IPA: [oˈloːrin]), was an Istar (Wizard), dispatched to Middle-earth in the Third Age to combat the threat of Sauron. 
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"He wore a tall pointed blue hat, a long grey cloak, and a silver scarf. He had a long white beard and bushy eyebrows that stuck out beyond the brim of his hat."
+                    </blockquote>
+                    <p class="f4 clr-white"> He joined Thorin II Oakenshield and his company to reclaim the Lonely Mountain from Smaug, helped form the Fellowship of the Ring to destroy the One Ring, and led the Free Peoples in the final campaign of the War of the Ring.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="main-section flex section-divider" id="aragorn">
+            <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTEKfWOOvP8wYaekcRqvVXo-rr06KOLpQH-Q&usqp=CAU"
+                        alt="Aragorn II Elessar">
+                    </div>
+                    <figcaption class="">Aragorn</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Aragorn_II_Elessar?so=search">Aragorn II Elessar</a></h3>
+                    <p class="margin-bottom f4 clr-white">Aragorn II, son of Arathorn II and Gilraen, also known as Elessar and Strider, was the 16th and last Chieftain of the Dúnedain of the North; later crowned King Elessar Telcontar (March 1, 2931 - FO 120 or SR 1541), the 26th King of Arnor, 35th King of Gondor and first High King of Gondor and Arnor since the short reign of Isildur. 
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"I am Aragorn son of Arathorn, and am called Elessar, the Elfstone, Dúnadan, the heir of Isildur Elendil's son of Gondor. Here is the sword that was broken and is forged again! "
+                    </blockquote>
+                    <p class="f4 clr-white">He was a great Ranger and warrior, and as Isildur's heir he bore the shards of Narsil, reforged and renamed Andúril, Flame of the West, in the War of the Ring.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="legolas">
+              <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="data:image/jpeg;base64,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"
+                        alt="Legolas Green Leaf">
+                    </div>
+                    <figcaption class="">Legolas</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Legolas?so=search">Legolas Green Leaf</a></h3>
+                    <p class="margin-bottom f4 clr-white">Legolas was a Sindarin Elf who was part of the Fellowship of the Ring in the Third Age. Son of the Elvenking Thranduil of Mirkwood, Legolas was Mirkwood's prince, a messenger, and a master archer. With his keen eyesight, sensitive hearing, and excellent bowmanship, 
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"Nay, time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow."
+                    </blockquote>
+                    <p class="f4 clr-white">Legolas was valuable to the Fellowship in their journey across Middle-earth. He was well-known for becoming friends with the Dwarf Gimli, despite their long-held differences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="boromir">
+            <div class="flex">
+               <figure class="main-section__image space-adjust width-adjust f5">
+                   <div class="image-container">
+                       <img src="https://i0.wp.com/graphicpolicy.com/wp-content/uploads/2021/10/OneDoesNotSimply.jpg?ssl=1"
+                        alt="Boromir">
+                   </div>
+                   <figcaption class="">Boromir</figcaption>
+               </figure>
+               <div class="main-section__block space-adjust width-adjust">
+                   <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Boromir?so=search">Boromir</a></h3>
+                   <p class="margin-bottom f4 clr-white">
+                    Boromir was a valiant warrior of Gondor for his prowess in combat and skill on the battlefield.
+                   </p>
+                   <blockquote class="margin-bottom f5 clr-gray">"The Ring! Is it not a strange fate that we should suffer so much fear and doubt for so small a thing? So small a thing!"
+                   </blockquote>
+                   <p class="f4 clr-white">
+                    He was the eldest son of Denethor II, who was Steward of Gondor during the War of the Ring, and his wife Finduilas. Even the people of Rohan admired him, particularly Éomer. He was the older brother of Faramir.
+                   </p>
+               </div>
+           </div>
+        </section>
+
+        <section class="main-section flex section-divider" id="gimli">
+            <div class="flex">
+            <figure class="main-section__image space-adjust width-adjust f5">
+                <div class="image-container">
+                    <img src="https://www.looper.com/img/gallery/the-iconic-role-that-left-john-rhys-davies-physically-ill/rhys-davies-was-miserable-in-his-makeup-for-the-lord-of-the-rings-1643832323.jpg"
+                        alt="Gimli">
+                </div>
+                <figcaption class="">Gimli</figcaption>
+            </figure>
+            <div class="main-section__block space-adjust width-adjust">
+                <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Gimli?so=search">Gimli Son of Glóin</a></h3>
+                <p class="margin-bottom f4 clr-white">
+                    Gimli, son of Glóin, was a Dwarf of the House of Durin and a member of the Fellowship of the Ring. 
+                </p>
+                <blockquote class="margin-bottom f5 clr-gray">
+                    "Faithless is he that says farewell when the road darkens."
+                </blockquote>
+                <p class="f4 clr-white">
+                    Unlike other Dwarves, he readily fought alongside Elves in the War of the Ring against Sauron at the end of the Third Age. After the defeat of Sauron, in the early Fourth Age, he was given the lordship over the Glittering Caves at Helm's Deep.
+                </p>
+            </div>
+        </div>
+        </section>
+        
+        <section class="main-section flex section-divider" id="elrond">
+            <div class="flex">
+               <figure class="main-section__image space-adjust width-adjust f5">
+                   <div class="image-container">
+                       <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/225E/production/_93289780_gettyimages-113933106.jpg"
+                       alt="Elrond">
+                   </div>
+                   <figcaption class="">Elrond</figcaption>
+               </figure>
+               <div class="main-section__block space-adjust width-adjust">
+                   <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Elrond">Elrond Half-elven</a></h3>
+                   <p class="margin-bottom f4 clr-white">
+                       Elrond (Sindarin; IPA: "Star-Dome") Half-elven, Lord of Rivendell, was one of the mighty Elf-rulers of old who lived in Middle-earth from the First Age to the beginning of the Fourth Age. He was the father of Elladan and Elrohir and Arwen Undómiel, the eventual wife of Aragorn II Elessar.
+                    </p>
+                   <blockquote class="margin-bottom f5 clr-gray">
+                       "The face of Elrond was ageless, neither old nor young, though in it was written the memory of many things both glad and sorrowful. His hair was dark as the shadows of twilight, and upon it was set a circlet of silver; his eyes were grey as a clear evening, and in them was a light like the light of stars. Venerable he seemed as a king crowned with many winters, and yet hale as a tried warrior in the fulness of his strength. He was the Lord of Rivendell and mighty among both Elves and Men."
+                   </blockquote>
+                   <p class="f4 clr-white">
+                       Elrond was a skillful warrior in battle and had commanded various Elven armies, including the Last Alliance. He was just as effective at leadership and gave much wise counsel. He had the gift of foresight through which he could view lands and events far away from Rivendell. He was also adept at healing others, though whether through medical knowledge or magic isn't known.
+                    </p>
+               </div>
+           </div>
+       </section>
+        
+        <section class="main-section flex section-divider" id="galadriel">
+             <div class="flex">
+                <figure class="main-section__image space-adjust width-adjust f5">
+                    <div class="image-container">
+                        <img src="data:image/jpeg;base64,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"
+                        alt="Galadriel">
+                    </div>
+                    <figcaption class="">Galadriel</figcaption>
+                </figure>
+                <div class="main-section__block space-adjust width-adjust">
+                    <h3 class="margin-bottom f5 clr-accent"><a href="https://lotr.fandom.com/wiki/Galadriel?so=search">Galadriel</a></h3>
+                    <p class="margin-bottom f4 clr-white">Galadriel was the "Lady" of the woods of Lothlórien, which she ruled with Celeborn her husband.
+
+                        One of the greatest of the Elves in Middle-earth, she surpassed nearly all others in beauty, knowledge, and power. She bore Nenya, one of the three Elven rings of power. J.R.R. Tolkien thought of her, along with Gil-galad the Elven-king, as one of the mightiest and fairest of all the Elves left in Middle-earth in the Third Age.
+                    </p>
+                    <blockquote class="margin-bottom f5 clr-gray">"This is Nenya, the Ring of Adamant, and I am its keeper."
+                    </blockquote>
+                    <p class="f4 clr-white">She was the only daughter and youngest child of Finarfin, prince of the Ñoldor and of Eärwen, whose cousin was Lúthien. Her elder brothers were Finrod Felagund, Orodreth, Angrod, and Aegnor.[2] Galadriel was a niece of Fëanor, the most important Elf of the early First Age.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="body-footer space-adjust width-adjust f5">
+        <div class="flex width-adjust">
+            
+            <div class="footer-item padding-adjust">
+                <h5 class="clr-gray">Check Out my Github</h5>
+                <a href="https://github.com/KjOHnBaggins" class="clr-white">KJOHN Baggins</a>
+            </div>
+
+            <div class="footer-item padding-adjust">
+                <h5 class="clr-gray">Explore</h5>
+                <ul class="clr-lightgray">
+                    <li><a href="generator.html">LoremIpsum Generator</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="imagegallery.html">Image Gallery</a></li>
+                </ul>     
+            </div>
+
+            <div class="footer-item padding-adjust display">
+                <ul class="nav-social-list clr-white">
+                    <li class="nav-social-item">
+                        <svg width="16px" height="16px">
+                        <path class="icon-social__fill" d="M16,3.53933333 C15.4113333,3.80066667 14.7786667,3.97666667 14.1146667,4.056 C14.792,3.65 15.3133333,3.00666667 15.558,2.24 C14.924,2.616 14.2213333,2.88933333 13.474,3.03666667 C12.8753333,2.39866667 12.0213333,2 11.0773333,2 C9.26466667,2 7.79466667,3.47 7.79466667,5.28266667 C7.79466667,5.53933333 7.824,5.79 7.88,6.03066667 C5.152,5.89333333 2.73333333,4.58666667 1.114,2.60066667 C0.831333333,3.08533333 0.669333333,3.64933333 0.669333333,4.25066667 C0.669333333,5.39 1.24933333,6.39466667 2.13,6.98333333 C1.592,6.96666667 1.08533333,6.81866667 0.643333333,6.57266667 C0.642666667,6.58666667 0.642666667,6.6 0.642666667,6.614 C0.642666667,8.20466667 1.77466667,9.53133333 3.276,9.83266667 C3.00066667,9.90733333 2.71066667,9.948 2.41133333,9.948 C2.19933333,9.948 1.994,9.92733333 1.79333333,9.88933333 C2.21133333,11.1926667 3.42333333,12.142 4.86,12.1686667 C3.73666667,13.0493333 2.32133333,13.574 0.783333333,13.574 C0.518,13.574 0.256666667,13.5586667 0,13.528 C1.45266667,14.4593333 3.17866667,15.0026667 5.032,15.0026667 C11.0693333,15.0026667 14.372,10.0013333 14.372,5.66333333 C14.372,5.52066667 14.3686667,5.37933333 14.362,5.23866667 C15.0033333,4.77533333 15.56,4.19733333 16,3.53933333"></path><path class="icon-social__fill" d="M16,3.53933333 C15.4113333,3.80066667 14.7786667,3.97666667 14.1146667,4.056 C14.792,3.65 15.3133333,3.00666667 15.558,2.24 C14.924,2.616 14.2213333,2.88933333 13.474,3.03666667 C12.8753333,2.39866667 12.0213333,2 11.0773333,2 C9.26466667,2 7.79466667,3.47 7.79466667,5.28266667 C7.79466667,5.53933333 7.824,5.79 7.88,6.03066667 C5.152,5.89333333 2.73333333,4.58666667 1.114,2.60066667 C0.831333333,3.08533333 0.669333333,3.64933333 0.669333333,4.25066667 C0.669333333,5.39 1.24933333,6.39466667 2.13,6.98333333 C1.592,6.96666667 1.08533333,6.81866667 0.643333333,6.57266667 C0.642666667,6.58666667 0.642666667,6.6 0.642666667,6.614 C0.642666667,8.20466667 1.77466667,9.53133333 3.276,9.83266667 C3.00066667,9.90733333 2.71066667,9.948 2.41133333,9.948 C2.19933333,9.948 1.994,9.92733333 1.79333333,9.88933333 C2.21133333,11.1926667 3.42333333,12.142 4.86,12.1686667 C3.73666667,13.0493333 2.32133333,13.574 0.783333333,13.574 C0.518,13.574 0.256666667,13.5586667 0,13.528 C1.45266667,14.4593333 3.17866667,15.0026667 5.032,15.0026667 C11.0693333,15.0026667 14.372,10.0013333 14.372,5.66333333 C14.372,5.52066667 14.3686667,5.37933333 14.362,5.23866667 C15.0033333,4.77533333 15.56,4.19733333 16,3.53933333"></path>
+                        </svg>
+                    </li>
+                    <li class="nav-social-item">
+                        <svg width="16px" height="16px">
+                            <path class="icon-social__fill" d="M6.48196682,15.9986141 L6.48196682,8.70106445 L4,8.70106445 L4,5.85694718 L6.48269403,5.85694718 L6.48269403,3.75967432 C6.48269403,1.32424892 7.98656375,0 10.1827371,0 C11.2299192,0 12.1374769,0.0778114414 12.3999996,0.112717509 L12.3999996,2.65649715 L10.8772224,2.65722436 C9.68387127,2.65722436 9.45189136,3.21863028 9.45189136,4.04110448 L9.45189136,5.85694718 L12.2981903,5.85694718 L11.9294949,8.70106445 L9.45189136,8.70106445 L9.45189136,15.9986141 L6.48196682,15.9986141 L6.48196682,15.9986141 Z"></path>
+                        </svg>
+                    </li>
+                    <li class="nav-social-item">
+                        <svg width="16px" height="16px">
+                            <path class="icon-social__fill" d="M7,7 L7,9.4 L10.97,9.4 C10.81,10.43 9.77,12.42 7,12.42 C4.61,12.42 2.66,10.44 2.66,8 C2.66,5.56 4.61,3.58 7,3.58 C8.36,3.58 9.27,4.16 9.79,4.66 L11.69,2.83 C10.47,1.69 8.89,1 7,1 C3.13,1 0,4.13 0,8 C0,11.87 3.13,15 7,15 C11.04,15 13.72,12.16 13.72,8.16 C13.72,7.7 13.67,7.35 13.61,7 L7,7 L7,7 Z M22,7 L20,7 L20,5 L18,5 L18,7 L16,7 L16,9 L18,9 L18,11 L20,11 L20,9 L22,9 L22,7 L22,7 Z"></path>
+                        </svg>
+                    </li>
+                </ul>  
+            </div>
+          
+            <div class="footer-item padding-adjust">
+                <h5 class="clr-gray">Original Design from</h5>
+                <div><a href="loremipsum.io" class="clr-lightgray">Lorem Ipsum</a></div>
+                <h5 class="clr-gray">Source Content from</h5>
+                <div><a href="https://lotr.fandom.com/" class="clr-lightgray">LOTR Fandom</a></div>
+            </div>
+
+            <div class="scroll-to-top">
+                <a href="#generator">scroll-to-top</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
